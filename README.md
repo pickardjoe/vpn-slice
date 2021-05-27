@@ -41,7 +41,7 @@ interfaces.
 * It automatically looks up named hosts, using the VPN's DNS servers,
   and adds entries for them to your `/etc/hosts` (which it cleans up
   after VPN disconnection), however it **does not otherwise alter your
-  `/etc/resolv.conf` at all**.
+  `/etc/resolv.conf` at all** (unless --domains-vpn-dns is specified).
 * It has many additional options to customize routing and lookup (for
   example, `--route-splits` to additionally route traffic for specific
   subnets requested *by the server*). Run `vpn-slice --help` to see
